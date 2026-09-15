@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#ff7a00">
+  <meta name="description" content="FireX FF Tournament App — download the official FireX app.">
+  <meta property="og:title" content="FireX FF Tournament App">
+  <meta property="og:description" content="Download the FireX FF Tournament App.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="firex-logo.png">
+  <title>FireX — FF Tournament App</title>
+
+  <!-- Favicon: the FireX logo will appear in the browser tab and link previews that use site metadata. -->
+  <link rel="icon" type="image/png" href="firex-logo.png">
+  <link rel="apple-touch-icon" href="firex-logo.png">
+
+  <style>
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0; min-height:100vh; color:#fff;
+      font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+      background:
+        radial-gradient(circle at 50% 15%,rgba(255,125,0,.22),transparent 35%),
+        radial-gradient(circle at 10% 90%,rgba(255,76,0,.10),transparent 28%),
+        #050505;
+      overflow-x:hidden;
+    }
+    body:before{
+      content:""; position:fixed; inset:0; pointer-events:none; opacity:.16;
+      background-image:linear-gradient(rgba(255,255,255,.035) 1px,transparent 1px),
+                       linear-gradient(90deg,rgba(255,255,255,.035) 1px,transparent 1px);
+      background-size:40px 40px;
+    }
+    .wrap{width:min(1080px,92%);margin:auto;position:relative;z-index:1}
+    nav{height:76px;display:flex;align-items:center;justify-content:space-between}
+    .brand{display:flex;align-items:center;gap:10px;font-weight:900;letter-spacing:1px}
+    .brand img{width:42px;height:42px;object-fit:contain;border-radius:10px}
+    .brand span{font-size:20px}
+    .hero{text-align:center;padding:35px 0 55px}
+    .logo{
+      width:min(390px,78vw); aspect-ratio:1; object-fit:contain;
+      filter:drop-shadow(0 0 24px rgba(255,120,0,.34));
+    }
+    h1{font-size:clamp(38px,7vw,72px);line-height:.95;margin:10px 0 15px;font-weight:1000;letter-spacing:-2px}
+    h1 .orange{color:#ff8a00}
+    .sub{max-width:650px;margin:0 auto;color:#cfcfcf;font-size:18px;line-height:1.6}
+    .cta{
+      display:inline-flex;align-items:center;justify-content:center;gap:10px;
+      margin-top:28px;padding:16px 30px;border-radius:14px;
+      color:#111;background:linear-gradient(135deg,#ffb300,#ff6900);
+      text-decoration:none;font-size:18px;font-weight:900;
+      box-shadow:0 12px 35px rgba(255,106,0,.25);
+      transition:.2s transform,.2s box-shadow;
+    }
+    .cta:hover{transform:translateY(-3px);box-shadow:0 16px 42px rgba(255,106,0,.4)}
+    .mini{margin-top:12px;color:#888;font-size:13px}
+    .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;padding:10px 0 70px}
+    .card{
+      padding:25px 20px;border:1px solid rgba(255,135,0,.18);border-radius:18px;
+      background:rgba(255,255,255,.045);backdrop-filter:blur(8px);
+      text-align:center;
+    }
+    .icon{font-size:30px;margin-bottom:10px}.card h3{margin:0 0 8px}.card p{margin:0;color:#aaa;line-height:1.5}
+    footer{text-align:center;border-top:1px solid #222;padding:25px 0 35px;color:#777;font-size:13px}
+    @media(max-width:700px){.cards{grid-template-columns:1fr}.hero{padding-top:20px}.logo{width:min(340px,85vw)}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <nav>
+      <div class="brand">
+        <img src="firex-logo.png" alt="FireX logo">
+        <span>FIREX</span>
+      </div>
+      <a class="cta" style="margin:0;padding:10px 16px;font-size:14px" href="FireX-1.apk" download>DOWNLOAD</a>
+    </nav>
+
+    <main class="hero">
+      <img class="logo" src="firex-logo.png" alt="FireX FF Tournament App logo">
+      <h1>FIRE<span class="orange">X</span></h1>
+      <p class="sub">FF Tournament App — join the action, compete in tournaments and play for the win.</p>
+      <a class="cta" href="FireX-1.apk" download aria-label="Download FireX APK">
+        ⬇️ &nbsp; DOWNLOAD APP
+      </a>
+      <div class="mini">Android APK • FireX-1.apk</div>
+    </main>
+
+    <section class="cards">
+      <div class="card"><div class="icon">🏆</div><h3>FF Tournaments</h3><p>Compete in exciting Free Fire tournament matches.</p></div>
+      <div class="card"><div class="icon">⚡</div><h3>Fast & Simple</h3><p>A clean landing page with a direct APK download.</p></div>
+      <div class="card"><div class="icon">🔥</div><h3>FireX</h3><p>Built around the FireX gaming tournament brand.</p></div>
+    </section>
+
+    <footer>© 2026 FireX FF Tournament App • All rights reserved.</footer>
+  </div>
+</body>
+</html>
